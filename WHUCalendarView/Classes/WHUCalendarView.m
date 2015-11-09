@@ -74,7 +74,6 @@ typedef NS_ENUM(NSUInteger, WHUCalendarViewMonthOption) {
 -(void)setupView{
     _shouldLayout=YES;
     _calcal=[[WHUCalendarCal alloc] init];
-    //预加载下数据
     _topView=[self makeView];
     _weekView=[self makeView];
     _contentView=[self makeView];
