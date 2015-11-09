@@ -33,7 +33,7 @@
 }
 
 -(void)setupViews{
-    _yearRange=20;
+    _yearRange=100;
     _pickerView=[[UIPickerView alloc] init];
     _pickerView.translatesAutoresizingMaskIntoConstraints=NO;
     [self addSubview:_pickerView];
@@ -67,7 +67,7 @@
 // pickerView 每列个数
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     if (component == 0) {
-        return 41;
+        return _yearRange*2+1;
     }
     
     return 12;
