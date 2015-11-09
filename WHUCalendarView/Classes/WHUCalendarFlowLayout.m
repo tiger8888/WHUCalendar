@@ -24,7 +24,6 @@
 
 - (void)prepareLayout {
     if(self.layoutAttributesArray==nil){
-        // 遍历 dataList 数组计算相关的属性
         NSInteger index = 0;
         NSMutableArray *attributesArray = [NSMutableArray arrayWithCapacity:WHUCalendarFlowLayout_MaxCount];
         NSInteger total=WHUCalendarFlowLayout_MaxCount;
@@ -41,9 +40,7 @@
             _conHeight=itemY;
         }
         self.conHeight+=self.itemSize.height;
-        // 找出最高列列号
         self.layoutAttributesArray = attributesArray.copy;
-        // 找出最高列列号
     }
 
 }
