@@ -1,6 +1,6 @@
 ####日历组件,支持农历显示,操作流畅
 ---
- ![image](https://github.com/tiger8888/WHUSliderView/blob/master/WHUCalendarDemo.gif)
+ ![image](https://github.com/tiger8888/WHUCalendar/blob/master/WHUCalendarDemo.gif)
 1. 支持IOS7+
 2. 支持xib
 3. 支持农历
