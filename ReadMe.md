@@ -1,3 +1,5 @@
+![image](https://github.com/tiger8888/WHUCalendar/blob/master/WHUCalendarDemo.gif)
+
 ####日历组件,支持农历显示,操作流畅
 ---
 1. 支持IOS7+
@@ -45,4 +47,4 @@
     [_pop show];
 }
 ```
-![image](https://github.com/tiger8888/WHUCalendar/blob/master/WHUCalendarDemo.gif)
+
