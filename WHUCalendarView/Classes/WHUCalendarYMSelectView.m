@@ -33,7 +33,7 @@
 }
 
 -(void)setupViews{
-    _yearRange=50;
+    _yearRange=20;
     _pickerView=[[UIPickerView alloc] init];
     _pickerView.translatesAutoresizingMaskIntoConstraints=NO;
     [self addSubview:_pickerView];
