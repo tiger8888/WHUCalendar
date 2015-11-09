@@ -2,8 +2,8 @@
 //  WHUCalendarYMSelectView.m
 //  TEST_Calendar
 //
-//  Created by SuperNova on 15/11/6.
-//  Copyright (c) 2015年 SuperNova. All rights reserved.
+//  Created by SuperNova(QQ:422596694) on 15/11/6.
+//  Copyright (c) 2015年 SuperNova(QQ:422596694). All rights reserved.
 //
 #import "WHUCalendarYMSelectView.h"
 #define WHUCalendarYMSelectView_Piker_Height 150.0f
@@ -33,7 +33,7 @@
 }
 
 -(void)setupViews{
-    _yearRange=20;
+    _yearRange=50;
     _pickerView=[[UIPickerView alloc] init];
     _pickerView.translatesAutoresizingMaskIntoConstraints=NO;
     [self addSubview:_pickerView];
