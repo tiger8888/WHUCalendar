@@ -8,6 +8,7 @@
 
 #import "WHUCalendarCal.h"
 #import "WHUCalendarItem.h"
+#import "WHUCalendarMarcro.h"
 #import <UIKit/UIKit.h>
 #define WHUCALENDAR_SECOND_PER_DAY (24 * 60 * 60)
 @interface WHUCalendarCal()
@@ -50,11 +51,13 @@
 
 -(NSDictionary*)loadDataWith:(NSString*)dateStr{
     self.currentCalMap=[self calendarMapWith:[self dateFromMonthString:dateStr]];
+    WHUCalendarView_WeakSelf weakself=self;
     dispatch_async(_workQueue, ^{
-        if(_preCalMap==nil){
+        WHUCalendarView_StrongSelf self=weakself;
+        if(self.preCalMap==nil){
             self.preCalMap=[self getPreCalendarMap:dateStr];
         }
-        if(_nextCalMap==nil){
+        if(self.nextCalMap==nil){
             self.nextCalMap=[self getNextCalendarMap:dateStr];
         }
     });
@@ -62,12 +65,14 @@
 }
 
 -(void)getCalendarMapWith:(NSString*)dateStr completion:(void(^)(NSDictionary* dic))completeBlk{
+    WHUCalendarView_WeakSelf weakself=self;
     dispatch_async(_workQueue, ^{
+        WHUCalendarView_StrongSelf self=weakself;
         NSString* nextMonthStr=[self nextMonthOfMonthString:dateStr];
         NSString* preMonthStr=[self preMonthOfMonthString:dateStr];
-        if(_preCalMap!=nil&&[_preCalMap[@"monthStr"] isEqualToString:dateStr]){
-            NSDictionary* tempCur=_currentCalMap;
-            self.currentCalMap=_preCalMap;
+        if(self.preCalMap!=nil&&[self.preCalMap[@"monthStr"] isEqualToString:dateStr]){
+            NSDictionary* tempCur=self.currentCalMap;
+            self.currentCalMap=self.preCalMap;
             [self dealDateOnMainQueue:completeBlk];
             if(tempCur!=nil&&[tempCur[@"monthStr"] isEqualToString:nextMonthStr]){
                 self.nextCalMap=tempCur;
@@ -77,9 +82,9 @@
             }
             self.preCalMap=nil;
         }
-        else if(_nextCalMap!=nil&&[_nextCalMap[@"monthStr"] isEqualToString:dateStr]){
-            NSDictionary* tempCur=_currentCalMap;
-            self.currentCalMap=_nextCalMap;
+        else if(self.nextCalMap!=nil&&[self.nextCalMap[@"monthStr"] isEqualToString:dateStr]){
+            NSDictionary* tempCur=self.currentCalMap;
+            self.currentCalMap=self.nextCalMap;
             [self dealDateOnMainQueue:completeBlk];
             if(tempCur!=nil&&[tempCur[@"monthStr"] isEqualToString:preMonthStr]){
                 self.preCalMap=tempCur;
@@ -101,11 +106,11 @@
             self.preCalMap=nil;
         }
         
-        if(_preCalMap==nil){
+        if(self.preCalMap==nil){
             self.preCalMap=[self getPreCalendarMap:dateStr];
         }
         
-        if(_nextCalMap==nil){
+        if(self.nextCalMap==nil){
             self.nextCalMap=[self getNextCalendarMap:dateStr];
         }
         
