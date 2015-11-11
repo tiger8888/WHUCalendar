@@ -41,10 +41,10 @@
 }
 
 -(NSString*)currentDateStr{
-    NSDate* curDate=[NSDate date];
-    NSDateComponents* firstDayOfMonth=[self componentOfDate:curDate];
     if(_curDateStr==nil){
-       self.curDateStr =[NSString stringWithFormat:@"%ld-%ld-%ld",(long)firstDayOfMonth.year,(long)firstDayOfMonth.month,(long)firstDayOfMonth.day];
+        NSDate* curDate=[NSDate date];
+        NSDateComponents* firstDayOfMonth=[self componentOfDate:curDate];
+        self.curDateStr =[NSString stringWithFormat:@"%ld-%ld-%ld",(long)firstDayOfMonth.year,(long)firstDayOfMonth.month,(long)firstDayOfMonth.day];
     }
     return _curDateStr;
 }

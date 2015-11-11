@@ -8,7 +8,8 @@
 
 #import "WHUCalendarCell.h"
 @interface WHUCalendarCell()
-@property(nonatomic,strong) CALayer* lineLayer;
+@property(nonatomic,strong) CALayer* leftLineLayer;
+@property(nonatomic,strong) CALayer* bottomLineLayer;
 @property(nonatomic,strong) CALayer* infoLayer;
 @end
 @implementation WHUCalendarCell
@@ -128,17 +129,19 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     CGFloat w=1/([UIScreen mainScreen].scale);
-    if(_rowIndex<_total-7){
+    if(_rowIndex<_total-7&&_bottomLineLayer==nil){
         CALayer* hline=[CALayer layer];
         hline.backgroundColor=[UIColor lightGrayColor].CGColor;
         hline.frame=CGRectMake(0,self.bounds.size.height-w, self.bounds.size.width, w);
         [self.layer addSublayer:hline];
+        self.bottomLineLayer=hline;
     }
-    if((_rowIndex+1)%7!=0){
+    if((_rowIndex+1)%7!=0&&_leftLineLayer==nil){
         CALayer* vline=[CALayer layer];
         vline.backgroundColor=[UIColor lightGrayColor].CGColor;
         vline.frame=CGRectMake(self.bounds.size.width-w,0, w,self.bounds.size.height);
         [self.layer addSublayer:vline];
+        self.leftLineLayer=vline;
     }
     if(_isToday){
         [self addTriLayer];
