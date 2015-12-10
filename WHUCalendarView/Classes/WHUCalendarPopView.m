@@ -21,7 +21,6 @@
     CGRect screenBounds=[[UIScreen mainScreen] bounds];
     self=[super initWithFrame:screenBounds];
     if(self){
-        self.backgroundColor=[[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
         _calView=[[WHUCalendarView alloc] init];
         _calView.translatesAutoresizingMaskIntoConstraints=NO;
         _backBtn=[UIButton  buttonWithType:UIButtonTypeCustom];
@@ -66,6 +65,7 @@
 -(void)show{
     [self setNeedsLayout];
     [self layoutIfNeeded];
+    self.backgroundColor=[[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
     self.hidden=NO;
     _bottomGapCts.constant=0;
     [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
