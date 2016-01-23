@@ -147,7 +147,6 @@
     if(_isToday){
         [self addTriLayer];
         [self showTodayInfo];
-        _dbl.text=@"建军节";
         _lbl.layer.transform=CATransform3DMakeTranslation(-8, 0, 0);
     }
     else{
