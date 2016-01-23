@@ -49,20 +49,20 @@
 
 
 -(void)showTodayInfo{
-    CGFloat midx=CGRectGetMidX(self.bounds)-3;
-    CGFloat midy=CGRectGetMidY(self.bounds)+3;
+    CGFloat midx=CGRectGetMidX(self.bounds)-5;
+    CGFloat midy=CGRectGetMidY(self.bounds)+5;
     CATextLayer *label = [[CATextLayer alloc] init];
     [label setFontSize:10];
-    [label setFrame:CGRectMake(midx+midx/2.0f-2, 0, 10, 10)];
-    [label setString:@"今"];
+    [label setFrame:CGRectMake(midx+midx/2.0f-2, 0, 10, 11)];
+    [label setString:@"腊"];
     label.contentsScale=[[UIScreen mainScreen] scale];
     [label setAlignmentMode:kCAAlignmentCenter];
     [label setForegroundColor:[[UIColor whiteColor] CGColor]];
     [_infoLayer addSublayer:label];
     CATextLayer *label1 = [[CATextLayer alloc] init];
     [label1 setFontSize:10];
-    [label1 setFrame:CGRectMake(midx+midx/2.0f+6, midy/2.0-6, 10, 10)];
-    [label1 setString:@"天"];
+    [label1 setFrame:CGRectMake(midx+midx/2.0f+6, midy/2.0-4, 10, 11)];
+    [label1 setString:@"约"];
     label1.contentsScale=[[UIScreen mainScreen] scale];
     [label1 setAlignmentMode:kCAAlignmentCenter];
     [label1 setForegroundColor:[[UIColor whiteColor] CGColor]];
@@ -109,8 +109,8 @@
 
 -(void)addTriLayer{
     CGFloat w=1/([UIScreen mainScreen].scale);
-    CGFloat midx=CGRectGetMidX(self.bounds)-3;
-    CGFloat midy=CGRectGetMidY(self.bounds)+3;
+    CGFloat midx=CGRectGetMidX(self.bounds)-10;
+    CGFloat midy=CGRectGetMidY(self.bounds)+10;
     CGFloat maxx=CGRectGetMaxX(self.bounds);
     UIBezierPath* path=[UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(midx, 0)];
@@ -143,9 +143,12 @@
         [self.layer addSublayer:vline];
         self.leftLineLayer=vline;
     }
+        _lbl.layer.transform=CATransform3DIdentity;
     if(_isToday){
         [self addTriLayer];
         [self showTodayInfo];
+        _dbl.text=@"建军节";
+        _lbl.layer.transform=CATransform3DMakeTranslation(-8, 0, 0);
     }
     else{
         if(_infoLayer!=nil){
