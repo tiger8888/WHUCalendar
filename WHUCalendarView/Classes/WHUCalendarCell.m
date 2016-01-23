@@ -54,7 +54,7 @@
     CATextLayer *label = [[CATextLayer alloc] init];
     [label setFontSize:10];
     [label setFrame:CGRectMake(midx+midx/2.0f-2, 0, 10, 11)];
-    [label setString:@"腊"];
+    [label setString:@"今"];
     label.contentsScale=[[UIScreen mainScreen] scale];
     [label setAlignmentMode:kCAAlignmentCenter];
     [label setForegroundColor:[[UIColor whiteColor] CGColor]];
@@ -62,7 +62,7 @@
     CATextLayer *label1 = [[CATextLayer alloc] init];
     [label1 setFontSize:10];
     [label1 setFrame:CGRectMake(midx+midx/2.0f+6, midy/2.0-4, 10, 11)];
-    [label1 setString:@"约"];
+    [label1 setString:@"天"];
     label1.contentsScale=[[UIScreen mainScreen] scale];
     [label1 setAlignmentMode:kCAAlignmentCenter];
     [label1 setForegroundColor:[[UIColor whiteColor] CGColor]];
