@@ -347,6 +347,7 @@ CGRect paragraphRect = [str boundingRectWithSize:CGSizeMake(width,CGFLOAT_MAX) o
     CGContextSetFillColorWithColor(context, color.CGColor);
     CGContextAddPath(context, path);
     CGContextFillPath(context);
+//    CFRelease(path);
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

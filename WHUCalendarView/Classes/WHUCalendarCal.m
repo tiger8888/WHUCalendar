@@ -195,14 +195,18 @@
             [dateArr addObject:item];
         }
         if(dateArr.count<42){
-            for(NSInteger i=weekGap+1;i<=weekGap+7;i++){
-                WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
-                item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)lastComponent.year,(long)lastComponent.month,(long)i];
-                item.day=-i;
-                lastComponent.day=i;
-                [self LunarForSolarYear:item andComponent:lastComponent];
-                [dateArr addObject:item];
-            }
+                NSInteger leftCount=42-dateArr.count;
+                for(NSInteger i=weekGap+1;i<=weekGap+leftCount;i++){
+                    WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
+                    item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)lastComponent.year,(long)lastComponent.month,(long)i];
+                    item.day=-i;
+                    lastComponent.day=i;
+                    [self LunarForSolarYear:item andComponent:lastComponent];
+                    [dateArr addObject:item];
+                    if(dateArr.count>42){
+                        break;
+                    }
+                }
         }
     }
     
