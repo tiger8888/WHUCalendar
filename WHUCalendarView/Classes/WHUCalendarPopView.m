@@ -68,7 +68,7 @@
     self.backgroundColor=[[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
     self.hidden=NO;
     _bottomGapCts.constant=0;
-    [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.3 delay:0.1 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self setNeedsLayout];
         [self layoutIfNeeded];
     } completion:nil];
@@ -77,7 +77,7 @@
 
 -(void)dismiss{
     _bottomGapCts.constant=_calHeight;
-    [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.8 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:0.3 delay:0.1 usingSpringWithDamping:0.8 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self setNeedsLayout];
         [self layoutIfNeeded];
     } completion:^(BOOL b){

@@ -20,4 +20,8 @@
 -(void)getCalendarMapWith:(NSString*)dateStr completion:(void(^)(NSDictionary* dic))completeBlk;
 -(NSString*)stringFromDate:(NSDate*)date;
 -(NSDictionary*)loadDataWith:(NSString*)dateStr;
+-(NSString*)stringFromTimeStamp:(NSInteger)timeStamp;
+-(NSDateComponents*)componentOfDate:(NSDate*)date;
+-(NSDate*)dateFromMonthString:(NSString*)dateStr;
+@property(nonatomic,strong) dispatch_queue_t workQueue;
 @end

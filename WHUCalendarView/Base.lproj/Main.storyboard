@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuf-Cl-g5n" customClass="WHUCalendarView">
-                                <rect key="frame" x="10" y="60" width="300" height="305"/>
+                                <rect key="frame" x="10" y="58" width="300" height="307"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="CbP-lp-L1h"/>
-                                    <constraint firstAttribute="height" constant="305" id="Vtu-P4-WLZ"/>
+                                    <constraint firstAttribute="height" constant="307" id="Vtu-P4-WLZ"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-DP-fRB">
@@ -44,7 +44,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fuf-Cl-g5n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="Iua-7G-aR7"/>
+                            <constraint firstItem="fuf-Cl-g5n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="Iua-7G-aR7"/>
                             <constraint firstAttribute="centerX" secondItem="6EJ-DP-fRB" secondAttribute="centerX" id="dTK-re-fhE"/>
                             <constraint firstAttribute="centerX" secondItem="fuf-Cl-g5n" secondAttribute="centerX" id="ilk-WQ-gB3"/>
                             <constraint firstItem="6EJ-DP-fRB" firstAttribute="top" secondItem="fuf-Cl-g5n" secondAttribute="bottom" constant="13" id="zXS-jq-ifm"/>
@@ -52,9 +52,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="calview" destination="fuf-Cl-g5n" id="vaM-MH-oeb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="507" y="449"/>
         </scene>
     </scenes>
 </document>

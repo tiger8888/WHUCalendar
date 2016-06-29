@@ -13,7 +13,6 @@
 #define WHUCALENDAR_SECOND_PER_DAY (24 * 60 * 60)
 @interface WHUCalendarCal()
 {
-    dispatch_queue_t _workQueue;
     NSCalendar* _lunarCalendar;
     NSArray* _lunarDays;
     NSArray* _lunarMonths;
@@ -36,8 +35,8 @@
         _lunarCalendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh-CN"];
         //农历日期名
         _lunarDays =[NSArray arrayWithObjects:@"初一",@"初二",@"初三",@"初四",@"初五",@"初六",@"初七",@"初八",@"初九",@"初十",
-                              @"十一",@"十二",@"十三",@"十四",@"十五",@"十六",@"十七",@"十八",@"十九",@"二十",
-                              @"廿一",@"廿二",@"廿三",@"廿四",@"廿五",@"廿六",@"廿七",@"廿八",@"廿九",@"三十",nil];
+                     @"十一",@"十二",@"十三",@"十四",@"十五",@"十六",@"十七",@"十八",@"十九",@"二十",
+                     @"廿一",@"廿二",@"廿三",@"廿四",@"廿五",@"廿六",@"廿七",@"廿八",@"廿九",@"三十",nil];
         
         //农历月份名
         _lunarMonths=  [NSArray arrayWithObjects:@"正",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九",@"十",@"十一",@"腊",nil];
@@ -56,7 +55,7 @@
     if(_curDateStr==nil){
         NSDate* curDate=[NSDate date];
         NSDateComponents* firstDayOfMonth=[self componentOfDate:curDate];
-        self.curDateStr =[NSString stringWithFormat:@"%ld-%ld-%ld",(long)firstDayOfMonth.year,(long)firstDayOfMonth.month,(long)firstDayOfMonth.day];
+        self.curDateStr =[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)firstDayOfMonth.year,(long)firstDayOfMonth.month,(long)firstDayOfMonth.day];
     }
     return _curDateStr;
 }
@@ -153,14 +152,15 @@
     firstDayOfMonth.day=1;
     NSDate* fdate=[cal dateFromComponents:firstDayOfMonth];
     firstDayOfMonth=[self componentOfDate:fdate];
-    if(firstDayOfMonth.weekday!=2){
-        NSInteger weekGap=firstDayOfMonth.weekday-2;
+    //从周日开始为1,2,3,4,5,6,7
+    if(firstDayOfMonth.weekday!=1){
+        NSInteger weekGap=firstDayOfMonth.weekday-1;
         if(weekGap<0) weekGap+=7;
         NSDate* firstDate=[fdate dateByAddingTimeInterval:-WHUCALENDAR_SECOND_PER_DAY*weekGap];
         NSDateComponents* firstComponent=[self componentOfDate:firstDate];
         for(int i=0;i<weekGap;i++){
             WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
-            item.dateStr=[NSString stringWithFormat:@"%ld-%ld-%ld",(long)firstComponent.year,(long)firstComponent.month,(long)firstComponent.day];
+            item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)firstComponent.year,(long)firstComponent.month,(long)firstComponent.day];
             item.day=-(firstComponent.day);
             [self LunarForSolarYear:item andComponent:firstComponent];
             firstComponent.day++;
@@ -172,7 +172,7 @@
     for(int i=1;i<=days.length;i++){
         WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
         curComponents.day=i;
-        item.dateStr=[NSString stringWithFormat:@"%ld-%ld-%ld",(long)(curComponents.year),(long)curComponents.month,(long)i];
+        item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)(curComponents.year),(long)curComponents.month,(long)i];
         item.day=i;
         [self LunarForSolarYear:item andComponent:curComponents];
         [dateArr addObject:item];
@@ -182,19 +182,31 @@
     lastDayOfMonth.day=days.length;
     NSDate* ldate=[cal dateFromComponents:lastDayOfMonth];
     lastDayOfMonth=[self componentOfDate:ldate];
-    if(lastDayOfMonth.weekday!=1){
+    if(lastDayOfMonth.weekday!=0||dateArr.count<42){
         NSInteger weekGap=8-lastDayOfMonth.weekday;
         NSDate* lastDate=[ldate dateByAddingTimeInterval:WHUCALENDAR_SECOND_PER_DAY*weekGap];
         NSDateComponents* lastComponent=[self componentOfDate:lastDate];
         for(int i=1;i<=weekGap;i++){
             WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
-            item.dateStr=[NSString stringWithFormat:@"%ld-%ld-%ld",(long)lastComponent.year,(long)lastComponent.month,(long)i];
+            item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)lastComponent.year,(long)lastComponent.month,(long)i];
             item.day=-i;
             lastComponent.day=i;
             [self LunarForSolarYear:item andComponent:lastComponent];
             [dateArr addObject:item];
         }
+        if(dateArr.count<42){
+            for(NSInteger i=weekGap+1;i<=weekGap+7;i++){
+                WHUCalendarItem* item=[[WHUCalendarItem alloc] init];
+                item.dateStr=[NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)lastComponent.year,(long)lastComponent.month,(long)i];
+                item.day=-i;
+                lastComponent.day=i;
+                [self LunarForSolarYear:item andComponent:lastComponent];
+                [dateArr addObject:item];
+            }
+        }
     }
+    
+    
     [mdic setObject:[dateArr copy] forKey:@"dataArr"];
     return [mdic copy];
 }
@@ -211,6 +223,16 @@
     [format setDateFormat:@"yyyy-MM-dd"];
     NSDate* date=[format dateFromString:dateString];
     return date;
+}
+
+-(NSString*)stringFromTimeStamp:(NSInteger)timeStamp{
+    NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:timeStamp];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *timeStr = [formatter stringFromDate:confromTimesp];
+    return timeStr;
 }
 
 -(void)preMonthCalendar:(NSString*)dateStr complete:(void(^)(NSDictionary*))completionBlk{
