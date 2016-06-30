@@ -1,4 +1,4 @@
-![image](https://github.com/tiger8888/WHUCalendar/blob/master/WHUCalendarDemo.gif)
+![image](https://github.com/tiger8888/WHUCalendar/blob/master/WHUCalendarDemo1.gif)
 
 ####日历组件,支持农历显示,操作流畅
 ---
