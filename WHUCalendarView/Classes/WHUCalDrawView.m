@@ -204,6 +204,8 @@ CGRect paragraphRect = [str boundingRectWithSize:CGSizeMake(width,CGFLOAT_MAX) o
     return path;
 }
 
+
+//计算日期,并获取每个日期的tag string
 -(void)setCurrentMonthDate:(NSDate *)currentMonthDate{
     if(![_currentMonthDate isEqualToDate:currentMonthDate]){
         _tagDic=nil;
@@ -431,6 +433,8 @@ CGRect paragraphRect = [str boundingRectWithSize:CGSizeMake(width,CGFLOAT_MAX) o
     return [array copy];
 }
 
+
+//绘制日历中的cell
 -(UIBezierPath*)gridPathRow:(NSInteger)row col:(NSInteger)col inset:(UIEdgeInsets)inset{
     [self calItemMetricsRow:row col:col inset:inset];
     CGFloat itemWidth=_itemW;

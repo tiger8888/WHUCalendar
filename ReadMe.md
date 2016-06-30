@@ -48,5 +48,20 @@
 }
 ```
 
-4.感谢 魂如烟 同学的深度测试.
+4.设置为每个日期设置tag string
+```objc
+    //calMonth存放的当前日历的年,月, itemDate存放单个日期的年,月,日
+    _calview.tagStringOfDate=^NSString*(NSArray* calm,NSArray* itemDateArray){
+        NSLog(@"%@",calm);
+        //如果当前日期中的天数,可以被5整除,显示 预约
+        if([itemDateArray[2] integerValue]%5==0){
+          return @"预约";
+        }
+        else{
+            return nil;
+        }
+    };
+```
+
+5.感谢 魂如烟 同学的深度测试.
 

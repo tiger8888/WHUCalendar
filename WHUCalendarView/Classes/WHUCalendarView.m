@@ -72,7 +72,7 @@ typedef NS_ENUM(NSUInteger, WHUCalendarViewMonthOption) {
     return self;
 }
 
-
+//转发方法
 -(id)forwardingTargetForSelector:(SEL)aSelector{
     NSArray* mArr=@[@"selectedDate",@"onDateSelectBlk",@"canSelectDate",@"tagStringOfDate"];
     NSString* sName=NSStringFromSelector(aSelector);
@@ -86,6 +86,7 @@ typedef NS_ENUM(NSUInteger, WHUCalendarViewMonthOption) {
     return nil;
 }
 
+//初始化各view组件
 -(void)setupView{
     _shouldLayout=YES;
     _topView=[self makeView];
