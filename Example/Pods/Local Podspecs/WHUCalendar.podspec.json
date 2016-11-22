@@ -1,0 +1,23 @@
+{
+  "name": "WHUCalendar",
+  "version": "0.1.2",
+  "summary": "A Lunar Calendar",
+  "description": "A Lunar Calendar,Fast,Tagged,Easy to Use",
+  "homepage": "https://github.com/tiger8888/WHUCalendar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tiger8888": "seekarmor@139.com"
+  },
+  "source": {
+    "git": "https://github.com/tiger8888/WHUCalendar.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "WHUCalendar/Classes/**/*",
+  "frameworks": "UIKit"
+}

@@ -1,11 +1,5 @@
-use_frameworks!
+#use_frameworks!
 
 target 'WHUCalendar_Example' do
   pod 'WHUCalendar', :path => '../'
-
-  target 'WHUCalendar_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

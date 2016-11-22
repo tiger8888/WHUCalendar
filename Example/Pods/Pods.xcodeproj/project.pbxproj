@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1214998A28220149A31EA8D98F81E58A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		196FCCCB0CA6B94DBC189F32F329BEE1 /* WHUCalendarYMSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CFFAC6D6BEB0F59133EB0E41000399 /* WHUCalendarYMSelectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F999063BCBAAFFD77169BFA6B3961A7 /* WHUCalendarPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA67CF85AA44F8ACFD29B1E758CB729A /* WHUCalendarPopView.m */; };
+		33D603EDD7653555B4183A0BADFF4612 /* WHUCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7D4D2E28C7E8D52FBAAB20FBEDED4 /* WHUCalendar-dummy.m */; };
+		4BBDB01BF95BBE38D34DB519F658AA82 /* WHUCalendarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 46555293F8A9F9B522DDF7CF51598622 /* WHUCalendarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5376EA95A84CE848F9856201DCD7597A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		70962FBD29E4D69CEC9283E6A5669996 /* WHUCalendarMarcro.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB38CC05C42941DBE18299B856F80D2 /* WHUCalendarMarcro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775B5AF0CAC205493E2BB6700C3F771B /* WHUCalendarPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = CFAF25521F751C4BB8F58DB35084C000 /* WHUCalendarPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87144734E81C27D7EBC043B83DE3E8E1 /* WHUCalDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2576147584A67CBEC3A2A16C5185CC83 /* WHUCalDrawView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8896D8AE8940AA008D6B4FAFB43DB90A /* WHUCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A525E04ABE674C306E75AFF7A5B2F /* WHUCalendarItem.m */; };
+		96ED8B0C20F3F034D93D459138DFF750 /* WHUCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1DFE2BEC918927B2C14A0D4D93FC5A /* WHUCalendarView.m */; };
+		9ACC4B90FCDE38F99227B177593738B4 /* WHUCalDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94898DDA0851F696A93C222EC70FD58A /* WHUCalDrawView.m */; };
+		A69FF6A314573E6A5205A1B14E9EF202 /* WHUCalendarCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E07249AE1AF8063E65030F36E44CC /* WHUCalendarCal.m */; };
+		A8C0FDA0FAF201A6D0EDB52AB32E14D3 /* Pods-WHUCalendar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3338ABD8D8FD34868E36E8F50E824 /* Pods-WHUCalendar_Example-dummy.m */; };
+		B54A715E2117CF9650BA6624718448BA /* WHUCalendarCal.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F078A27E6A6B4D535D0013C407142A /* WHUCalendarCal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA92447B7BBC0EBCE7E82E9FF07FE3D4 /* WHUCalendarYMSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDD4DC79A7D0062DC224048A8AD1C8 /* WHUCalendarYMSelectView.m */; };
+		BE1E5BF8860D4555A5E31C4F9D986A4E /* WHUCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC5447773A04CA99AC66A298B3C929E /* WHUCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E467E9E7A03A880612069A27FBDFF128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC02D2051E16F3E2075A4757D2CBAC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25BAE9D8EFCCDC1234CFCC2AC070F23D;
+			remoteInfo = WHUCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1030F0D10C16941317048085B6C06AAC /* WHUCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHUCalendar.xcconfig; sourceTree = "<group>"; };
+		12070C6AC7F67915F0794C15A336CBB1 /* libPods-WHUCalendar_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WHUCalendar_Example.a"; path = "libPods-WHUCalendar_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F078A27E6A6B4D535D0013C407142A /* WHUCalendarCal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarCal.h; sourceTree = "<group>"; };
+		2576147584A67CBEC3A2A16C5185CC83 /* WHUCalDrawView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalDrawView.h; sourceTree = "<group>"; };
+		2C5E07249AE1AF8063E65030F36E44CC /* WHUCalendarCal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarCal.m; sourceTree = "<group>"; };
+		2D7BB7D35FAE4B3AC2B09D342F5B6097 /* Pods-WHUCalendar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHUCalendar_Example-resources.sh"; sourceTree = "<group>"; };
+		35D3338ABD8D8FD34868E36E8F50E824 /* Pods-WHUCalendar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHUCalendar_Example-dummy.m"; sourceTree = "<group>"; };
+		46555293F8A9F9B522DDF7CF51598622 /* WHUCalendarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarItem.h; sourceTree = "<group>"; };
+		52B7A994EB3F0CE95FA09D420A0CC5EC /* Pods-WHUCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHUCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76F28DD4D405D5CE1D6DFBADB8A195AB /* Pods-WHUCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHUCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7980EFFA4BFA8504C0076DF2C860CCDD /* Pods-WHUCalendar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHUCalendar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		83CFFAC6D6BEB0F59133EB0E41000399 /* WHUCalendarYMSelectView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarYMSelectView.h; sourceTree = "<group>"; };
+		91BDD4DC79A7D0062DC224048A8AD1C8 /* WHUCalendarYMSelectView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarYMSelectView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94898DDA0851F696A93C222EC70FD58A /* WHUCalDrawView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalDrawView.m; sourceTree = "<group>"; };
+		96C7D4D2E28C7E8D52FBAAB20FBEDED4 /* WHUCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHUCalendar-dummy.m"; sourceTree = "<group>"; };
+		9EB38CC05C42941DBE18299B856F80D2 /* WHUCalendarMarcro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarMarcro.h; sourceTree = "<group>"; };
+		ABC5447773A04CA99AC66A298B3C929E /* WHUCalendarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarView.h; sourceTree = "<group>"; };
+		B148540311AA57B56A6465FDEB6BF4CF /* libWHUCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWHUCalendar.a; path = libWHUCalendar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58A525E04ABE674C306E75AFF7A5B2F /* WHUCalendarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarItem.m; sourceTree = "<group>"; };
+		BEA2FC11FA9BD47346D4714578E4EC7A /* Pods-WHUCalendar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WHUCalendar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA67CF85AA44F8ACFD29B1E758CB729A /* WHUCalendarPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarPopView.m; sourceTree = "<group>"; };
+		CFAF25521F751C4BB8F58DB35084C000 /* WHUCalendarPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WHUCalendarPopView.h; sourceTree = "<group>"; };
+		DD1DFE2BEC918927B2C14A0D4D93FC5A /* WHUCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarView.m; sourceTree = "<group>"; };
+		F510241E81449B4CF8D8DCE012FBADF6 /* WHUCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHUCalendar-prefix.pch"; sourceTree = "<group>"; };
+		F9AF7715DA379ADFFFD8E8F309F22E27 /* Pods-WHUCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHUCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3343DD01B5A7852B97D944FCB6F992AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1214998A28220149A31EA8D98F81E58A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4486692BFCE3508D11F4C4EA53C91A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E467E9E7A03A880612069A27FBDFF128 /* Foundation.framework in Frameworks */,
+				5376EA95A84CE848F9856201DCD7597A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3005285619C81F3D79530788AE2FD005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12070C6AC7F67915F0794C15A336CBB1 /* libPods-WHUCalendar_Example.a */,
+				B148540311AA57B56A6465FDEB6BF4CF /* libWHUCalendar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E54EE3E1D9909BB04C4930B89D49F93 /* Pods-WHUCalendar_Example */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2FC11FA9BD47346D4714578E4EC7A /* Pods-WHUCalendar_Example-acknowledgements.markdown */,
+				7980EFFA4BFA8504C0076DF2C860CCDD /* Pods-WHUCalendar_Example-acknowledgements.plist */,
+				35D3338ABD8D8FD34868E36E8F50E824 /* Pods-WHUCalendar_Example-dummy.m */,
+				F9AF7715DA379ADFFFD8E8F309F22E27 /* Pods-WHUCalendar_Example-frameworks.sh */,
+				2D7BB7D35FAE4B3AC2B09D342F5B6097 /* Pods-WHUCalendar_Example-resources.sh */,
+				76F28DD4D405D5CE1D6DFBADB8A195AB /* Pods-WHUCalendar_Example.debug.xcconfig */,
+				52B7A994EB3F0CE95FA09D420A0CC5EC /* Pods-WHUCalendar_Example.release.xcconfig */,
+			);
+			name = "Pods-WHUCalendar_Example";
+			path = "Target Support Files/Pods-WHUCalendar_Example";
+			sourceTree = "<group>";
+		};
+		41934CB15B282D76BF9D3D7BF1254E3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1030F0D10C16941317048085B6C06AAC /* WHUCalendar.xcconfig */,
+				96C7D4D2E28C7E8D52FBAAB20FBEDED4 /* WHUCalendar-dummy.m */,
+				F510241E81449B4CF8D8DCE012FBADF6 /* WHUCalendar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example副本 8/Pods/Target Support Files/WHUCalendar";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687AADC642F55B964C8619B8E7130AC9 /* WHUCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				41934CB15B282D76BF9D3D7BF1254E3A /* Support Files */,
+				A23FE58E5879E11C12416A950B1A7A92 /* WHUCalendar */,
+			);
+			name = WHUCalendar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9F5E3EAB82F21417C9DE848B60F97353 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3005285619C81F3D79530788AE2FD005 /* Products */,
+				F03957489A557A24067BEF134A6DA30C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F5E3EAB82F21417C9DE848B60F97353 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				687AADC642F55B964C8619B8E7130AC9 /* WHUCalendar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A23FE58E5879E11C12416A950B1A7A92 /* WHUCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				D0F53821ADA7D9419FE06A72F3AD7DD8 /* Classes */,
+			);
+			name = WHUCalendar;
+			path = WHUCalendar;
+			sourceTree = "<group>";
+		};
+		D0F53821ADA7D9419FE06A72F3AD7DD8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2576147584A67CBEC3A2A16C5185CC83 /* WHUCalDrawView.h */,
+				94898DDA0851F696A93C222EC70FD58A /* WHUCalDrawView.m */,
+				15F078A27E6A6B4D535D0013C407142A /* WHUCalendarCal.h */,
+				2C5E07249AE1AF8063E65030F36E44CC /* WHUCalendarCal.m */,
+				46555293F8A9F9B522DDF7CF51598622 /* WHUCalendarItem.h */,
+				B58A525E04ABE674C306E75AFF7A5B2F /* WHUCalendarItem.m */,
+				9EB38CC05C42941DBE18299B856F80D2 /* WHUCalendarMarcro.h */,
+				CFAF25521F751C4BB8F58DB35084C000 /* WHUCalendarPopView.h */,
+				CA67CF85AA44F8ACFD29B1E758CB729A /* WHUCalendarPopView.m */,
+				ABC5447773A04CA99AC66A298B3C929E /* WHUCalendarView.h */,
+				DD1DFE2BEC918927B2C14A0D4D93FC5A /* WHUCalendarView.m */,
+				83CFFAC6D6BEB0F59133EB0E41000399 /* WHUCalendarYMSelectView.h */,
+				91BDD4DC79A7D0062DC224048A8AD1C8 /* WHUCalendarYMSelectView.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F03957489A557A24067BEF134A6DA30C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E54EE3E1D9909BB04C4930B89D49F93 /* Pods-WHUCalendar_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02950623F0EAD6EF06D1CA28CA1AD99C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87144734E81C27D7EBC043B83DE3E8E1 /* WHUCalDrawView.h in Headers */,
+				B54A715E2117CF9650BA6624718448BA /* WHUCalendarCal.h in Headers */,
+				4BBDB01BF95BBE38D34DB519F658AA82 /* WHUCalendarItem.h in Headers */,
+				70962FBD29E4D69CEC9283E6A5669996 /* WHUCalendarMarcro.h in Headers */,
+				775B5AF0CAC205493E2BB6700C3F771B /* WHUCalendarPopView.h in Headers */,
+				BE1E5BF8860D4555A5E31C4F9D986A4E /* WHUCalendarView.h in Headers */,
+				196FCCCB0CA6B94DBC189F32F329BEE1 /* WHUCalendarYMSelectView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25BAE9D8EFCCDC1234CFCC2AC070F23D /* WHUCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0F0B7003B321335FD486AFFB1EA76E /* Build configuration list for PBXNativeTarget "WHUCalendar" */;
+			buildPhases = (
+				1414DD145FD4B898733E30A4687369CA /* Sources */,
+				A4486692BFCE3508D11F4C4EA53C91A2 /* Frameworks */,
+				02950623F0EAD6EF06D1CA28CA1AD99C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHUCalendar;
+			productName = WHUCalendar;
+			productReference = B148540311AA57B56A6465FDEB6BF4CF /* libWHUCalendar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BF987AAC32BCA0CE54FE1FBA9F71AF95 /* Pods-WHUCalendar_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A1AC8603BFA42CC4FC830D1CC33AE5 /* Build configuration list for PBXNativeTarget "Pods-WHUCalendar_Example" */;
+			buildPhases = (
+				2992FF22EAFB5F5FA40D501507E1C675 /* Sources */,
+				3343DD01B5A7852B97D944FCB6F992AB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD0581B62CBBAF4CA1333FD4EE294B7E /* PBXTargetDependency */,
+			);
+			name = "Pods-WHUCalendar_Example";
+			productName = "Pods-WHUCalendar_Example";
+			productReference = 12070C6AC7F67915F0794C15A336CBB1 /* libPods-WHUCalendar_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3005285619C81F3D79530788AE2FD005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF987AAC32BCA0CE54FE1FBA9F71AF95 /* Pods-WHUCalendar_Example */,
+				25BAE9D8EFCCDC1234CFCC2AC070F23D /* WHUCalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1414DD145FD4B898733E30A4687369CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACC4B90FCDE38F99227B177593738B4 /* WHUCalDrawView.m in Sources */,
+				33D603EDD7653555B4183A0BADFF4612 /* WHUCalendar-dummy.m in Sources */,
+				A69FF6A314573E6A5205A1B14E9EF202 /* WHUCalendarCal.m in Sources */,
+				8896D8AE8940AA008D6B4FAFB43DB90A /* WHUCalendarItem.m in Sources */,
+				1F999063BCBAAFFD77169BFA6B3961A7 /* WHUCalendarPopView.m in Sources */,
+				96ED8B0C20F3F034D93D459138DFF750 /* WHUCalendarView.m in Sources */,
+				BA92447B7BBC0EBCE7E82E9FF07FE3D4 /* WHUCalendarYMSelectView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2992FF22EAFB5F5FA40D501507E1C675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C0FDA0FAF201A6D0EDB52AB32E14D3 /* Pods-WHUCalendar_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD0581B62CBBAF4CA1333FD4EE294B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WHUCalendar;
+			target = 25BAE9D8EFCCDC1234CFCC2AC070F23D /* WHUCalendar */;
+			targetProxy = FC02D2051E16F3E2075A4757D2CBAC01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		145CA78D2775694E815E8F2310ABF236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F28DD4D405D5CE1D6DFBADB8A195AB /* Pods-WHUCalendar_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2803DF8FE40D019672C0771B1708DB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B7A994EB3F0CE95FA09D420A0CC5EC /* Pods-WHUCalendar_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2F6154A665F025040D9A67FB3168782E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1030F0D10C16941317048085B6C06AAC /* WHUCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WHUCalendar/WHUCalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8506B4585B65BF405E513C731338D289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1030F0D10C16941317048085B6C06AAC /* WHUCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WHUCalendar/WHUCalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A1AC8603BFA42CC4FC830D1CC33AE5 /* Build configuration list for PBXNativeTarget "Pods-WHUCalendar_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145CA78D2775694E815E8F2310ABF236 /* Debug */,
+				2803DF8FE40D019672C0771B1708DB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0F0B7003B321335FD486AFFB1EA76E /* Build configuration list for PBXNativeTarget "WHUCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8506B4585B65BF405E513C731338D289 /* Debug */,
+				2F6154A665F025040D9A67FB3168782E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
